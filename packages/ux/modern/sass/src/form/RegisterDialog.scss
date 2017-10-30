@@ -1,0 +1,76 @@
+.register-dialog-header {
+	.x-container-body-el {
+		font-size: 24px;
+		line-height: 36px;
+		padding: 10px 0 0 0;
+	}
+
+	.x-label {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+.register-dialog-form {
+	.x-field.x-required > {
+		.x-label-el:after {
+			content: "";
+		}
+	}
+
+	.x-label-text-el {
+		font-size: 14px;
+	}
+
+	.x-input-el {
+		font-size: 14px;
+	}
+
+	.x-field > * > * > {
+		.x-error-message-el {
+			font-size: 0.875rem
+		}
+	}
+
+	.x-label {
+		.x-innerhtml {
+			font-size: 14px;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: $base-color;
+	}
+
+	.x-toolbar-body-el {
+		padding: 8px 10px;
+	}
+
+	.x-button {
+		font-weight: 400;
+
+		.x-text-el {
+			text-transform: none;	
+		}
+	}
+
+	.register-dialog-action-register {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 18px;
+
+		.x-text-el {
+			text-transform: uppercase;
+		}
+	}
+}
+
+.register-dialog-capslockwarning {
+	color: $accent-color;
+}
+
+.register-dialog-status {
+	padding: 14px 0 0 0;
+	color: $accent-color;
+}

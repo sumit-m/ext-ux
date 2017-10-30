@@ -1,0 +1,7 @@
+/*
+!/.gitignore
+!/README.md
+!packages/
+packages/*/*
+packages/ux/modern/sass/var/
+!packages/ux/modern/
