@@ -3,6 +3,7 @@ Ext.define('Ext.ux.form.LoginDialog', {
     alias: 'widget.logindialog',
 
     requires: [
+        'Ext.app.ViewModel',
         'Ext.Container',
         'Ext.form.Panel',
         'Ext.Label',
@@ -256,7 +257,7 @@ Ext.define('Ext.ux.form.LoginDialog', {
             config.languageField
         ]);
         config.formPanel.buttons = (config.formPanel.buttons || []).concat(['->', config.loginAction]);
-        
+
         config.items = [config.formPanel].concat(config.items || []);
 		
         return me.callParent([config]);
@@ -355,5 +356,5 @@ Ext.define('Ext.ux.form.LoginDialog', {
         if(this.findPlugin('msgbus')) {
             this.publish('user.login.failure', {form: form, result: result});
         }
-	}
+    }
 });

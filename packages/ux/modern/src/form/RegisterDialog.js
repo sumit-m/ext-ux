@@ -3,12 +3,16 @@ Ext.define('Ext.ux.form.RegisterDialog', {
     alias: 'widget.registerdialog',
 
     requires: [
+        'Ext.app.ViewModel',
         'Ext.Container',
         'Ext.form.Panel',
         'Ext.Label',
+        'Ext.data.validator.Length',
+        'Ext.data.validator.Email',
         'Ext.field.Text',
         'Ext.field.Password',
-        'Ext.Button'
+        'Ext.Button',
+        'Ext.ux.plugin.MsgBus'        
     ],
 
     config: {
@@ -362,5 +366,5 @@ Ext.define('Ext.ux.form.RegisterDialog', {
         if(this.findPlugin('msgbus')) {
             this.publish('user.register.failure', {form: form, result: result});
         }
-	}
+    }
 });
