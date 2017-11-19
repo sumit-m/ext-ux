@@ -1,3 +1,8 @@
+/*
+TODO:
+> The combobox populates with the language config
+*/
+
 Ext.define('Ext.ux.form.LoginDialog', {
     extend: 'Ext.Panel',
     alias: 'widget.logindialog',
@@ -43,6 +48,7 @@ Ext.define('Ext.ux.form.LoginDialog', {
         config.language = Ext.Object.merge({
             default: 'en-us',
             'en-us': {
+                description: 'English - United States',
                 title: 'Sign in',
                 subtitle: 'or <a href=#>Create account</a>',
                 status: '',
@@ -175,7 +181,6 @@ Ext.define('Ext.ux.form.LoginDialog', {
                 bind: {
                     label: '{field.label.language}',
                 },
-                value: config.language.default,
                 editable: false,
                 queryMode: 'local',
                 displayField: 'label',
@@ -183,15 +188,26 @@ Ext.define('Ext.ux.form.LoginDialog', {
                 store: {
                     xtype: 'store',
                     fields: ['code', 'label'],
-                    data: [{
-                        code: 'en-us',
-                        label: 'English - United States'
-                    }, {
-                        code: 'it',
-                        label: 'Italiano‬'
-                    }]
+                    data: []
                 },
                 listeners: {
+                    initialize: {
+                        fn: function(sender, eOpts) {
+                            var data = [];
+                            Ext.Object.each(this.config.language, function(key, value, object) {
+                                if(key !== 'default') {
+                                    description = value['description'] || '';
+                                    data = data.concat({
+                                        code: key,
+                                        label: description
+                                    });
+                                }
+                            }, this);
+                            sender.getStore().setData(data);
+
+                            sender.setValue(this.config.language.default || 'en-us');
+                        }
+                    },
                     change: {
                         fn: function(field, newValue, oldValue, eOpts) {
                             if(this.findPlugin('msgbus')) {
