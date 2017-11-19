@@ -46,6 +46,7 @@ Ext.define('Ext.ux.form.RegisterDialog', {
         config.language = Ext.Object.merge({
             default: 'en-us',
             'en-us': {
+                description: 'English - United States',
                 title: 'Create account',
                 subtitle: 'or <a href=#>Sign in</a>',
                 status: '',
