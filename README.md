@@ -4,7 +4,7 @@ Public repository for custom ExtJS 6.5.x User Extensions and Plugins.
 
 ### Login Dialog
 
-ExtJS 6.5.x Modern - Login Dialog User Extension
+ExtJS 6.5.x Modern - Login Dialog User Extension [[Docs](../../wiki/Wiki#logindialog)]
 
 Localized and fully customizable Login Dialog. Detects caps lock for password input, captures server responses for showing error messages and generates events on successful login / login failure.
 
@@ -12,7 +12,7 @@ Localized and fully customizable Login Dialog. Detects caps lock for password in
 
 ### Register Dialog
 
-ExtJS 6.5.x Modern - Register Dialog User Extension
+ExtJS 6.5.x Modern - Register Dialog User Extension [[Docs](../../wiki/Wiki#registerdialog)]
 
 Localized and fully customizable Register Dialog. Detects caps lock for password input, captures server responses for showing error messages and generates events on success / failure.
 
@@ -20,13 +20,13 @@ Localized and fully customizable Register Dialog. Detects caps lock for password
 
 ### Hide Grouped Header
 
-ExtJS 6.5.x Modern - Hide Grouped Header Plugin
+ExtJS 6.5.x Modern - Hide Grouped Header Plugin [[Docs](../../wiki/Wiki#hidegroupedheader)]
 
 Hides the grouped column from the grid header.
 
 ![Screenshot](/resources/hide-grouped-header.png?raw=true)
 
-### MsgBus
+### MsgBus [[Docs](../../wiki/Wiki#msgbus)]
 
 Saki's MsgBus Plugin ported to ExtJS 6.5.x. Original version: http://extjs.eu/ext-ux-msgbus-plugin/
 
