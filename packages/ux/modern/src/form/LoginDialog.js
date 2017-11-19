@@ -1,8 +1,3 @@
-/*
-TODO:
-> The combobox populates with the language config
-*/
-
 Ext.define('Ext.ux.form.LoginDialog', {
     extend: 'Ext.Panel',
     alias: 'widget.logindialog',
