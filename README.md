@@ -26,9 +26,11 @@ Hides the grouped column from the grid header.
 
 ![Screenshot](/resources/hide-grouped-header.png?raw=true)
 
-### MsgBus [[Docs](../../wiki/Wiki#msgbus)]
+### MsgBus
 
-Saki's MsgBus Plugin ported to ExtJS 6.5.x. Original version: http://extjs.eu/ext-ux-msgbus-plugin/
+Saki's MsgBus Plugin ported to ExtJS 6.5.x. [[Docs](../../wiki/Wiki#msgbus)]
+
+Original version: http://extjs.eu/ext-ux-msgbus-plugin/
 
 MsgBus Plugin enables components to publish and subscribe to messages with specific subjects with wildcard support. The messages communicate via a global message bus.
 
